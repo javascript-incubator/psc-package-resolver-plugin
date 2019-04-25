@@ -3,7 +3,7 @@
 #### Install
 
 ```bash
-$ yarn add @slayre/psc-package-resolver-plugin
+$ yarn add @arcana/psc-package-resolver-plugin
 ```
 
 _Resolve psc-packages in Js files directly_
