@@ -1,0 +1,22 @@
+{
+  "name": "psc-package-resolver-plugin",
+  "version": "0.1.0",
+  "main": "index.js",
+  "license": "MIT",
+  "enginite": "1.2.15",
+  "devDependencies": {
+    "@enginite/libstarter": "1.0.3",
+    "@hellpack/eslint-config-hellpack": "^2.2.0",
+    "eslint": "^5.16.0",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-prettier": "^3.0.1",
+    "prettier": "^1.17.0"
+  },
+  "scripts": {
+    "dev": "en-libstarter dev",
+    "build": "en-libstarter build"
+  },
+  "dependencies": {
+    "fs-extra": "^7.0.1"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "extends": "@hellpack/eslint-config-hellpack",
+  "plugins": ["eslint-plugin-prettier", "eslint-plugin-import"],
+  "rules": {
+    "prefer-destructuring": 0,
+    "global-require": 0,
+    "import/no-dynamic-require": 0
+  }
+}
