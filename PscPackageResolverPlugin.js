@@ -2,7 +2,6 @@
 /* eslint-disable prefer-destructuring */
 const syspath = require('path');
 const fs = require('fs-extra');
-const messages = require('./messages');
 
 const rootResolve = (...args) => syspath.resolve(process.cwd(), ...args);
 

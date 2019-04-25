@@ -1,20 +1,20 @@
-## resolve-psc-package-webpack-plugin
+## psc-package-resolver-plugin
 
 _Resolve psc-packages in Js files directly_
 
-- Before
+- Before (_Purescript_)
 
 ```purescript
 import Data.Maybe (Nothing, Just)
 ```
 
-- After
+- After (_Javascript_)
 
 ```javascript
 import { Nothing, Just } from 'purescipt-maybe/Data.Maybe';
 ```
 
-### Usage
+#### Usage
 
 - Requires `purs-loader` to work.
 
