@@ -1,4 +1,3 @@
-sudo: false
 language: node_js
 node_js:
   - 8
@@ -7,7 +6,24 @@ node_js:
 cache:
   yarn: true
   directories:
+    - .psc-package
+    - output
     - node_modules
 
+env:
+  - PATH=$HOME/purescript:$HOME/psc-package:$PATH
+
+install:
+  - TAG=v0.12.0
+  - PSC_PACKAGE_TAG=v0.4.1
+  - wget -O $HOME/purescript.tar.gz https://github.com/purescript/purescript/releases/download/$TAG/linux64.tar.gz
+  - tar -xvf $HOME/purescript.tar.gz -C $HOME/
+  - chmod a+x $HOME/purescript
+  - wget -O $HOME/psc-package.tar.gz https://github.com/purescript/psc-package/releases/download/$PSC_PACKAGE_TAG/linux64.tar.gz
+  - tar -xvf $HOME/psc-package.tar.gz -C $HOME/
+  - chmod a+x $HOME/psc-package
+
 script:
+  - yarn install
+  - psc-package install
   - yarn test
