@@ -1,12 +1,21 @@
 ## psc-package-resolver-plugin
 
+_Resolve psc-packages in Js files directly_
+
+<p>
+  <a href="https://github.com/prettier/prettier">
+        <img src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg" alt="prettier"/>
+  </a>
+  <a href="https://travis-ci.org/rajatsharma/psc-package-resolver-plugin">
+        <img src="https://travis-ci.org/rajatsharma/psc-package-resolver-plugin.svg?branch=master" alt="travis"/>
+  </a>
+</p>
+
 #### Install
 
 ```bash
 $ yarn add @arcana/psc-package-resolver-plugin
 ```
-
-_Resolve psc-packages in Js files directly_
 
 - Before (_Purescript_)
 
