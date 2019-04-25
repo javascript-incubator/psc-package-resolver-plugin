@@ -1,5 +1,11 @@
 ## psc-package-resolver-plugin
 
+#### Install
+
+```bash
+$ yarn add @slayre/psc-package-resolver-plugin
+```
+
 _Resolve psc-packages in Js files directly_
 
 - Before (_Purescript_)
